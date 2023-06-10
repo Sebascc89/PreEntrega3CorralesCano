@@ -59,13 +59,14 @@
             <fieldset>
                 <legend>Formulario de contacto</legend>
                 <p>
-                    Diligencia el siguiente formulario para participar en el proceso de selección de las vacantes que tenemos activos... Sin miedo al éxito!
+                    Diligencia el siguiente formulario para participar en el proceso de selección de las vacantes que
+                    tenemos activos... Sin miedo al éxito!
                 </p>
                 <form class="formularioPers">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Escribe tu nombre:</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text"></div>
+                        <label for="exampleInputEmail1" class="form-label">Escribe tu nombre:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Escribe tu apellido:</label>
@@ -73,59 +74,75 @@
                         <div id="emailHelp" class="form-text"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Vacante a aplicar</label>
+                        <label for="exampleInputEmail1" class="form-label">Escribe tu correo electrónico:</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Selecciona</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Vacante a la que quieres aplicar</label>
+                        <select id="disabledSelect" class="form-select">
+                            <option>Selecciona</option>
+                            <option>Planner - Estampación</option>
+                            <option>Apoyo tienda - Ciudad Jardín</option>
+                            <option>Practicante de diseño gráfico</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Adjunta tu CV</label>
+                        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Autorizas a MATTELSA a realizar el tratamiento y manejo de tus datos personales conforme a nuestra Politica de Privacidad</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Autorizas a MATTELSA a realizar el
+                            tratamiento y manejo de tus datos personales conforme a nuestra Politica de
+                            Privacidad</label>
                     </div>
                     <button type="submit" class="btn btn-danger">Aplicar</button>
-                  </form>
+                </form>
             </fieldset>
-        </section>
-        <h2>
-            Estas son las vacantes que tenemos activas
-        </h2>
-        <section>
-            <h4>
-                Planner - Estampación
-            </h4>
-            <p class="parrafo1">
-                Buscamos una persona con afinidad para el análisis de la información y la programación de la planta,
-                garantizando la optimización de recursos y la mejora continua en el proceso de estampación.
-            </p>
-            <p class="parrafo2">
-                Central | Medellín
-            </p>
-        </section>
-        <section>
-            <h4>
-                Apoyo tienda - Ciudad Jardín
-            </h4>
-            <p class="parrafo1">
-                Encargadx de darle vida al espacio donde empieza todo y hacer que comprar sea simple, sin perder la
-                magia.
-            </p>
-            <p class="parrafo2">
-                Tiendas | Cali
-            </p>
-        </section>
-        <section>
-            <h4>
-                Practicante de diseño gráfico
-            </h4>
-            <p class="parrafo1">
-                Estudiantes que estén en búsqueda de sus prácticas académicas y que sea su primer contacto de
-                aprendizaje.
-            </p>
-            <p class="parrafo2">
-                Central | Bogotá
-            </p>
-        </section>
+            <h2>
+                Estas son las vacantes que tenemos activas
+            </h2>
+            <section class="contenedorVacantes">
+                <div class="vacante1">
+                    <h4>
+                        Planner - Estampación
+                    </h4>
+                    <p class="parrafo1">
+                        Buscamos una persona con afinidad para el análisis de la información y la programación de la
+                        planta,
+                        garantizando la optimización de recursos y la mejora continua en el proceso de estampación.
+                    </p>
+                    <p class="parrafo2">
+                        Central | Medellín
+                    </p>
+                </div>
+                <div class="vacante2">
+                    <h4>
+                        Apoyo tienda - Ciudad Jardín
+                    </h4>
+                    <p class="parrafo1">
+                        Encargadx de darle vida al espacio donde empieza todo y hacer que comprar sea simple, sin perder
+                        la
+                        magia.
+                    </p>
+                    <p class="parrafo2">
+                        Tiendas | Cali
+                    </p>
+                </div>
+                <div class="vacante3">
+                    <h4>
+                        Practicante de diseño gráfico
+                    </h4>
+                    <p class="parrafo1">
+                        Estudiantes que estén en búsqueda de sus prácticas académicas y que sea su primer contacto de
+                        aprendizaje.
+                    </p>
+                    <p class="parrafo2">
+                        Central | Bogotá
+                    </p>
+                </div>
+            </section>
     </main>
-    <hr>
     <footer class="footer">
         <div class="enlaces">
             <img class="footerLogo" src="../img/logo-nav-bar.png" alt="Logo Matt">
@@ -146,8 +163,8 @@
         </h4>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

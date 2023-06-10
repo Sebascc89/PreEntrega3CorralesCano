@@ -23,7 +23,7 @@ body {
 }
 
 .navbarPers li>a:hover {
-    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 li .textoNavbar {
@@ -82,7 +82,7 @@ li .textoNavbar {
     font-weight: bold;
 }
 
-/*---- Media query para main responsive de inicio ----*/
+/*---- Media query para main responsive de Inicio ----*/
 
 @media only screen and (max-width: 600px) {
     .contenedor {
@@ -158,6 +158,7 @@ h2 {
     color: black;
     text-align: center;
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -169,6 +170,14 @@ h3 {
 
 h4 {
     text-decoration: none;
+}
+
+.parrafo1,
+.parrafo2 {
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 a {
@@ -192,7 +201,8 @@ a {
 .section1_1Nos img,
 .section2_1Nos img,
 .section3_1Nos img {
-    width: 100%;
+    width: 95%;
+    height: 95%;
 }
 
 .videoAct {
@@ -204,11 +214,34 @@ a {
     width: 80%;
 }
 
-.parrafo1,
-.parrafo2 {
+.contenedorVacantes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    grid-template-areas:
+        "vacante1 vacante2 vacante3";
+}
+
+.vacante1, .vacante2, .vacante3 {
     padding: 10px;
-    line-height: 1.5;
-    text-align: justify;
+    border: 0.5px black solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedorVacantes {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 10px;
+        grid-template-areas:
+            "vacante1"
+            "vacante2"
+            "vacante3";
+    }
 }
 
 .contenedorForm {
@@ -272,6 +305,10 @@ a {
 @media only screen and (max-width: 768px) {
     .enlaces {
         width: 95%;
+    }
+
+    .redes {
+        gap: 5px;
     }
 
     .copyright {
