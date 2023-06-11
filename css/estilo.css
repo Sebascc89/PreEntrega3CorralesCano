@@ -90,6 +90,55 @@ main .contenedorInicio {
     main .contenedorInicio .section2_2 p {
       font-weight: bold; }
 
+main .imagenNosotros {
+  width: 100%; }
+
+main h1 {
+  text-align: center;
+  color: black;
+  padding: 40px 40px;
+  font-weight: bold; }
+
+main .contenedorNosotros {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "section1_1Nos section1_2Nos" "section2_1Nos section2_2Nos" "section3_1Nos section3_2Nos"; }
+  @media screen and (max-width: 768px) {
+    main .contenedorNosotros {
+      margin: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "section1_1Nos" "section1_2Nos" "section2_1Nos" "section2_2Nos" "section3_1Nos" "section3_2Nos"; } }
+  main .contenedorNosotros .section1_1Nos {
+    padding: 10px; }
+    main .contenedorNosotros .section1_1Nos img {
+      width: 100%; }
+  main .contenedorNosotros .section1_2Nos {
+    padding: 10px;
+    display: grid;
+    place-content: center; }
+  main .contenedorNosotros .section2_1Nos {
+    padding: 10px; }
+    main .contenedorNosotros .section2_1Nos img {
+      width: 100%; }
+  main .contenedorNosotros .section2_2Nos {
+    padding: 10px;
+    display: grid;
+    place-content: center; }
+  main .contenedorNosotros .section3_1Nos {
+    padding: 10px; }
+    main .contenedorNosotros .section3_1Nos img {
+      width: 100%; }
+  main .contenedorNosotros .section3_2Nos {
+    padding: 10px;
+    display: grid;
+    place-content: center; }
+
 .footer {
   display: flex;
   flex-direction: column;

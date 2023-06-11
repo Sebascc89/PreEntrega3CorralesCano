@@ -1,0 +1,76 @@
+main {
+    .imagenNosotros {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        color: black;
+        padding: 40px 40px;
+        font-weight: bold;
+    }
+    .contenedorNosotros {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "section1_1Nos section1_2Nos"
+            "section2_1Nos section2_2Nos"
+            "section3_1Nos section3_2Nos";
+
+        @include responsive {
+            margin: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "section1_1Nos"
+                "section1_2Nos"
+                "section2_1Nos"
+                "section2_2Nos"
+                "section3_1Nos"
+                "section3_2Nos";
+        }
+
+        .section1_1Nos {
+            padding: 10px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .section1_2Nos {
+            padding: 10px;
+            display: grid;
+            place-content: center;
+        }
+
+        .section2_1Nos {
+            padding: 10px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .section2_2Nos {
+            padding: 10px;
+            display: grid;
+            place-content: center;
+        }
+
+        .section3_1Nos {
+            padding: 10px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .section3_2Nos {
+            padding: 10px;
+            display: grid;
+            place-content: center;
+        }
+    }
+}
