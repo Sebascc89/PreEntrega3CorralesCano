@@ -1,317 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-    background-color: #f0f0f0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*---- Header ----*/
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif; }
 
 .header .navbarPers {
-    width: 100%;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 30%) !important;
-}
+  width: 100%;
+  position: fixed;
+  background-color: white !important;
+  opacity: 30%; }
 
-.navbarPers li>a:hover {
-    border-bottom: 2px solid black;
-}
-
-li .textoNavbar {
-    color: black !important;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.imagenPrincipal {
-    padding: 0px;
-    text-align: center;
-    width: 100%;
-}
-
-.imagenPrincipal img {
-    padding: 10px;
-    border-radius: 20px;
-}
-
-/*---- Main del inicio ----*/
-
-.contenedor {
-    margin: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "section1_1 section1_2"
-        "section2_1 section2_2";
-}
-
-.imgInicio1,
-.imgInicio2 {
-    object-fit: contain;
-    object-position: top;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-}
-
-.section1_1,
-.section2_2 {
-    display: grid;
-    place-content: center;
-    padding: 30px;
-}
-
-.section1_1>h3,
-.section2_2>h3 {
-    font-weight: bold;
-}
-
-.section1_1>p,
-.section2_2>p {
-    font-weight: bold;
-}
-
-/*---- Media query para main responsive de Inicio ----*/
-
-@media only screen and (max-width: 600px) {
-    .contenedor {
-        margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "section1_1"
-            "section1_2"
-            "section2_2"
-            "section2_1";
-    }
-}
-
-/*---- Main grid para page Nosotros ----*/
-
-.contenedorNosotros {
-    margin: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-        "section1_1Nos section1_2Nos"
-        "section2_1Nos section2_2Nos"
-        "section3_1Nos section3_2Nos";
-}
-
-/*---- Media query para el main de page Nosotros ----*/
-
-@media only screen and (max-width: 600px) {
-    .contenedorNosotros {
-        margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "section1_1Nos"
-            "section1_2Nos"
-            "section2_1Nos"
-            "section2_2Nos"
-            "section3_1Nos"
-            "section3_2Nos";
-    }
-}
-
-/*---- Main para page Cultura ----*/
-
-.contenidoCultura {
-    display: flex;
-    flex-direction: row;
-}
-
-.columnaIzqCult,
-.columnaDerCult {
-    width: 50%;
-}
-
-/*---- Estilos generales texto----*/
-
-h1 {
-    text-align: center;
-    color: black;
-    padding: 40px 40px;
-    font-weight: bold;
-}
-
-h2 {
-    font-style: italic;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-style: italic;
-    color: black;
-    text-align: left;
-    padding: 10px;
-}
-
-h4 {
-    text-decoration: none;
-}
-
-.parrafo1,
-.parrafo2 {
-    padding: 10px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(6, 6, 54);
-}
-
-/*---- Estilos generales pages ----*/
-
-.imagenActivismo img,
-.imagenNosotros img,
-.imagenCultura img,
-.imagenTrabaja img {
-    width: 100%;
-}
-
-.imagenNosotros, .imagenTrabaja {
-    width: 100%;
-}
-
-.section1_1Nos img,
-.section2_1Nos img,
-.section3_1Nos img {
-    width: 95%;
-    height: 95%;
-}
-
-.videoAct {
-    text-align: center;
-}
-
-.videoAct video {
-    padding: 10px;
-    width: 80%;
-}
-
-.contenedorVacantes {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10px;
-    grid-template-areas:
-        "vacante1 vacante2 vacante3";
-}
-
-.vacante1, .vacante2, .vacante3 {
-    padding: 10px;
-    border: 0.5px black solid;
-}
-
-@media only screen and (max-width: 600px) {
-    .contenedorVacantes {
-        margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 10px;
-        grid-template-areas:
-            "vacante1"
-            "vacante2"
-            "vacante3";
-    }
-}
-
-.contenedorForm {
-    margin: 10px;
-}
-
-.formularioPers {
-    padding: 5%;
-    border: 1px black;
-}
-
-/*---- Footer ----*/
+.header .container-fluid #navbarSupportedContent ul li .textoNavbar {
+  color: black !important;
+  font-weight: bold;
+  font-size: 1.3rem; }
+  .header .container-fluid #navbarSupportedContent ul li .textoNavbar:hover {
+    border-bottom: 2px solid black; }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-
-.enlaces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px; }
+  .footer .enlaces {
     display: flex;
     flex-direction: row;
-    border-bottom: rgb(207, 207, 207) solid 1px;
+    border-bottom: #cfcfcf solid 1px;
     padding-bottom: 10px;
     justify-content: space-between;
     width: 60%;
-    align-items: center;
-}
-
-.enlaces>h4 {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.footerLogo {
-    height: 40px;
-}
-
-.redes {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.redesLogo {
-    height: 25px;
-}
-
-.copyright {
+    align-items: center; }
+    .footer .enlaces h4 {
+      font-weight: bold;
+      font-size: 17px; }
+    .footer .enlaces .footerLogo {
+      height: 40px; }
+    .footer .enlaces .redes {
+      display: flex;
+      align-items: center;
+      gap: 20px; }
+      .footer .enlaces .redes .redesLogo {
+        height: 25px; }
+      .footer .enlaces .redes a {
+        text-decoration: none; }
+  .footer .copyright {
     text-align: right;
     width: 60%;
     font-weight: bold;
     font-size: 13px;
-    margin-top: 15px;
-}
-
-/*---- Media query para footer responsive ----*/
-
-@media only screen and (max-width: 768px) {
-    .enlaces {
-        width: 95%;
-    }
-
-    .redes {
-        gap: 5px;
-    }
-
-    .copyright {
-        width: 95%;
-    }
-}
+    margin-top: 15px; }

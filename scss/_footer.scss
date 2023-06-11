@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    
+        .enlaces {
+            display: flex;
+            flex-direction: row;
+            border-bottom: rgb(207, 207, 207) solid 1px;
+            padding-bottom: 10px;
+            justify-content: space-between;
+            width: 60%;
+            align-items: center;
+        
+        h4 {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .footerLogo {
+            height: 40px;
+        }
+
+        .redes {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .redesLogo {
+                height: 25px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: right;
+        width: 60%;
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
