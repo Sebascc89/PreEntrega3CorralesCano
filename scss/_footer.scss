@@ -21,6 +21,11 @@
         h4 {
             font-weight: bold;
             font-size: 17px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
 
         .footerLogo {
@@ -34,10 +39,6 @@
 
             @include responsive {
                 gap: 10px;
-            }
-
-            a {
-                text-decoration: none;
             }
 
             .redesLogo {

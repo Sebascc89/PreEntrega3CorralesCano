@@ -1,0 +1,95 @@
+main {
+    .imagenPrincipal {
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+        img {
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+    h1 {
+        text-align: center;
+        color: black;
+        padding: 40px 40px;
+        font-weight: bold;
+    }
+    h2 {
+        font-style: italic;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px; 
+    }
+    .contenedorInicio {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "section1_1 section1_2"
+            "section2_1 section2_2";
+
+            @include responsive {
+                margin: auto;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "section1_1"
+                    "section1_2"
+                    "section2_2"
+                    "section2_1";
+            }
+
+            .section1_1 {
+                display: grid;
+                place-content: center;
+                padding: 30px;
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                p {
+                    font-weight: bold;
+                }
+            }
+
+            .section1_2 {
+                .imgInicio1 {
+                    object-fit: contain;
+                    object-position: top;
+                    width: 100%;
+                    padding: 0;
+                    overflow: hidden;
+                }
+            }
+
+            .section2_1 {
+                .imgInicio2 {
+                    object-fit: contain;
+                    object-position: top;
+                    width: 100%;
+                    padding: 0;
+                    overflow: hidden;
+                }
+            }
+
+            .section2_2 {
+                display: grid;
+                place-content: center;
+                padding: 30px;
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                p {
+                    font-weight: bold;
+                }
+            }
+    }
+}

@@ -14,15 +14,81 @@ body {
 .header .navbarPers {
   width: 100%;
   position: fixed;
-  background-color: white !important;
+  background-color: black;
   opacity: 30%; }
 
 .header .container-fluid #navbarSupportedContent ul li .textoNavbar {
   color: black !important;
   font-weight: bold;
-  font-size: 1.3rem; }
+  font-size: 1.4rem; }
   .header .container-fluid #navbarSupportedContent ul li .textoNavbar:hover {
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid black;
+    opacity: 100% !important; }
+
+main .imagenPrincipal {
+  padding: 0px;
+  text-align: center;
+  width: 100%; }
+  main .imagenPrincipal img {
+    padding: 10px;
+    border-radius: 20px; }
+
+main h1 {
+  text-align: center;
+  color: black;
+  padding: 40px 40px;
+  font-weight: bold; }
+
+main h2 {
+  font-style: italic;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+main .contenedorInicio {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "section1_1 section1_2" "section2_1 section2_2"; }
+  @media screen and (max-width: 768px) {
+    main .contenedorInicio {
+      margin: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "section1_1" "section1_2" "section2_2" "section2_1"; } }
+  main .contenedorInicio .section1_1 {
+    display: grid;
+    place-content: center;
+    padding: 30px; }
+    main .contenedorInicio .section1_1 h3 {
+      font-weight: bold; }
+    main .contenedorInicio .section1_1 p {
+      font-weight: bold; }
+  main .contenedorInicio .section1_2 .imgInicio1 {
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+    padding: 0;
+    overflow: hidden; }
+  main .contenedorInicio .section2_1 .imgInicio2 {
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+    padding: 0;
+    overflow: hidden; }
+  main .contenedorInicio .section2_2 {
+    display: grid;
+    place-content: center;
+    padding: 30px; }
+    main .contenedorInicio .section2_2 h3 {
+      font-weight: bold; }
+    main .contenedorInicio .section2_2 p {
+      font-weight: bold; }
 
 .footer {
   display: flex;
@@ -44,6 +110,9 @@ body {
     .footer .enlaces h4 {
       font-weight: bold;
       font-size: 17px; }
+      .footer .enlaces h4 a {
+        text-decoration: none;
+        color: black; }
     .footer .enlaces .footerLogo {
       height: 40px; }
     .footer .enlaces .redes {
@@ -53,8 +122,6 @@ body {
       @media screen and (max-width: 768px) {
         .footer .enlaces .redes {
           gap: 10px; } }
-      .footer .enlaces .redes a {
-        text-decoration: none; }
       .footer .enlaces .redes .redesLogo {
         height: 25px; }
   .footer .copyright {
