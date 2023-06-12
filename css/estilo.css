@@ -9,6 +9,7 @@
 
 body {
   background-color: #f0f0f0;
+  color: black;
   font-family: 'Montserrat', sans-serif; }
 
 .header .navbarPers {
@@ -26,28 +27,28 @@ body {
     border-bottom: 2px solid black;
     opacity: 100% !important; }
 
-main .imagenPrincipal {
+.mainInicio .imagenPrincipal {
   padding: 0px;
   text-align: center;
   width: 100%; }
-  main .imagenPrincipal img {
+  .mainInicio .imagenPrincipal img {
     padding: 10px;
     border-radius: 20px; }
 
-main h1 {
+.mainInicio h1 {
   text-align: center;
   color: black;
   padding: 40px 40px;
   font-weight: bold; }
 
-main h2 {
+.mainInicio h2 {
+  text-align: center;
   font-style: italic;
   color: black;
-  text-align: center;
   padding: 10px;
   margin-bottom: 10px; }
 
-main .contenedorInicio {
+.mainInicio .contenedorInicio {
   margin: auto;
   width: 100%;
   display: grid;
@@ -55,52 +56,52 @@ main .contenedorInicio {
   grid-template-rows: auto auto;
   grid-template-areas: "section1_1 section1_2" "section2_1 section2_2"; }
   @media screen and (max-width: 768px) {
-    main .contenedorInicio {
+    .mainInicio .contenedorInicio {
       margin: auto;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-template-areas: "section1_1" "section1_2" "section2_2" "section2_1"; } }
-  main .contenedorInicio .section1_1 {
+  .mainInicio .contenedorInicio .section1_1 {
     display: grid;
     place-content: center;
     padding: 30px; }
-    main .contenedorInicio .section1_1 h3 {
+    .mainInicio .contenedorInicio .section1_1 h3 {
       font-weight: bold; }
-    main .contenedorInicio .section1_1 p {
+    .mainInicio .contenedorInicio .section1_1 p {
       font-weight: bold; }
-  main .contenedorInicio .section1_2 .imgInicio1 {
+  .mainInicio .contenedorInicio .section1_2 .imgInicio1 {
     object-fit: contain;
     object-position: top;
     width: 100%;
     padding: 0;
     overflow: hidden; }
-  main .contenedorInicio .section2_1 .imgInicio2 {
+  .mainInicio .contenedorInicio .section2_1 .imgInicio2 {
     object-fit: contain;
     object-position: top;
     width: 100%;
     padding: 0;
     overflow: hidden; }
-  main .contenedorInicio .section2_2 {
+  .mainInicio .contenedorInicio .section2_2 {
     display: grid;
     place-content: center;
     padding: 30px; }
-    main .contenedorInicio .section2_2 h3 {
+    .mainInicio .contenedorInicio .section2_2 h3 {
       font-weight: bold; }
-    main .contenedorInicio .section2_2 p {
+    .mainInicio .contenedorInicio .section2_2 p {
       font-weight: bold; }
 
-main .imagenNosotros {
+.mainNosotros .imagenNosotros {
   width: 100%; }
 
-main h1 {
+.mainNosotros h1 {
   text-align: center;
   color: black;
   padding: 40px 40px;
   font-weight: bold; }
 
-main .contenedorNosotros {
+.mainNosotros .contenedorNosotros {
   margin: auto;
   width: 100%;
   display: grid;
@@ -108,44 +109,44 @@ main .contenedorNosotros {
   grid-template-rows: auto auto auto;
   grid-template-areas: "section1_1Nos section1_2Nos" "section2_1Nos section2_2Nos" "section3_1Nos section3_2Nos"; }
   @media screen and (max-width: 768px) {
-    main .contenedorNosotros {
+    .mainNosotros .contenedorNosotros {
       margin: auto;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-template-areas: "section1_1Nos" "section1_2Nos" "section2_1Nos" "section2_2Nos" "section3_1Nos" "section3_2Nos"; } }
-  main .contenedorNosotros .section1_1Nos {
+  .mainNosotros .contenedorNosotros .section1_1Nos {
     padding: 10px; }
-    main .contenedorNosotros .section1_1Nos img {
+    .mainNosotros .contenedorNosotros .section1_1Nos img {
       width: 100%; }
-  main .contenedorNosotros .section1_2Nos {
+  .mainNosotros .contenedorNosotros .section1_2Nos {
     padding: 10px;
     display: grid;
     place-content: center; }
-  main .contenedorNosotros .section2_1Nos {
+  .mainNosotros .contenedorNosotros .section2_1Nos {
     padding: 10px; }
-    main .contenedorNosotros .section2_1Nos img {
+    .mainNosotros .contenedorNosotros .section2_1Nos img {
       width: 100%; }
-  main .contenedorNosotros .section2_2Nos {
+  .mainNosotros .contenedorNosotros .section2_2Nos {
     padding: 10px;
     display: grid;
     place-content: center; }
-  main .contenedorNosotros .section3_1Nos {
+  .mainNosotros .contenedorNosotros .section3_1Nos {
     padding: 10px; }
-    main .contenedorNosotros .section3_1Nos img {
+    .mainNosotros .contenedorNosotros .section3_1Nos img {
       width: 100%; }
-  main .contenedorNosotros .section3_2Nos {
+  .mainNosotros .contenedorNosotros .section3_2Nos {
     padding: 10px;
     display: grid;
     place-content: center; }
 
-main .imagenActivismo {
+.mainActivismo .imagenActivismo {
   width: 100%; }
-  main .imagenActivismo img {
+  .mainActivismo .imagenActivismo img {
     width: 100%; }
 
-main p {
+.mainActivismo p {
   padding: 10px;
   margin-top: 40px;
   font-size: 1.5rem;
@@ -154,77 +155,120 @@ main p {
   font-weight: bold;
   text-align: justify; }
 
-main h1 {
+.mainActivismo h1 {
   text-align: center;
   color: black;
   padding: 30px 30px;
   font-weight: bold; }
 
-main .medioAmbiente {
+.mainActivismo .medioAmbiente {
   text-align: center; }
-  main .medioAmbiente h3 {
+  .mainActivismo .medioAmbiente h3 {
     font-style: italic;
     color: black;
     text-align: left;
     padding: 10px; }
-  main .medioAmbiente .videoMedioAmbiente {
+  .mainActivismo .medioAmbiente .videoMedioAmbiente {
     width: 100%; }
-    main .medioAmbiente .videoMedioAmbiente video {
+    .mainActivismo .medioAmbiente .videoMedioAmbiente video {
       padding: 10px;
       width: 60%; }
       @media screen and (max-width: 768px) {
-        main .medioAmbiente .videoMedioAmbiente video {
+        .mainActivismo .medioAmbiente .videoMedioAmbiente video {
           width: 90%; } }
-  main .medioAmbiente p {
+  .mainActivismo .medioAmbiente p {
     font-size: 1.2rem;
     line-height: 1.5;
     color: black;
     text-align: justify;
     font-weight: 100; }
 
-main .justiciaSocial {
+.mainActivismo .justiciaSocial {
   text-align: center; }
-  main .justiciaSocial h3 {
+  .mainActivismo .justiciaSocial h3 {
     font-style: italic;
     color: black;
     text-align: left;
     padding: 10px; }
-  main .justiciaSocial .videoJusticiaSocial {
+  .mainActivismo .justiciaSocial .videoJusticiaSocial {
     width: 100%; }
-    main .justiciaSocial .videoJusticiaSocial video {
+    .mainActivismo .justiciaSocial .videoJusticiaSocial video {
       padding: 10px;
       width: 60%; }
       @media screen and (max-width: 768px) {
-        main .justiciaSocial .videoJusticiaSocial video {
+        .mainActivismo .justiciaSocial .videoJusticiaSocial video {
           width: 90%; } }
-  main .justiciaSocial p {
+  .mainActivismo .justiciaSocial p {
     font-size: 1.2rem;
     line-height: 1.5;
     color: black;
     text-align: justify;
     font-weight: 100; }
 
-main .salud {
+.mainActivismo .salud {
   text-align: center; }
-  main .salud h3 {
+  .mainActivismo .salud h3 {
     font-style: italic;
     color: black;
     text-align: left;
     padding: 10px; }
-  main .salud .videoSalud {
+  .mainActivismo .salud .videoSalud {
     width: 100%; }
-    main .salud .videoSalud video {
+    .mainActivismo .salud .videoSalud video {
       padding: 10px;
       width: 60%; }
       @media screen and (max-width: 768px) {
-        main .salud .videoSalud video {
+        .mainActivismo .salud .videoSalud video {
           width: 90%; } }
-  main .salud p {
+  .mainActivismo .salud p {
     font-size: 1.2rem;
     line-height: 1.5;
     color: black;
     text-align: justify;
     font-weight: 100; }
+
+main .imagenCultura {
+  width: 100%; }
+  main .imagenCultura img {
+    width: 100%; }
+
+main h1 {
+  text-align: center;
+  padding: 30px 30px;
+  font-weight: bold; }
+
+main p {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-align: justify; }
+
+main h2 {
+  font-style: italic;
+  text-align: left;
+  padding: 10px; }
+
+main h3 {
+  font-style: italic;
+  text-align: left;
+  padding: 10px; }
+
+main .contenidoCultura {
+  padding: 10px;
+  display: flex;
+  flex-direction: row; }
+  main .contenidoCultura .columnaIzqCult {
+    padding: 10px;
+    width: 50%; }
+    main .contenidoCultura .columnaIzqCult ul li {
+      font-size: 1.1rem; }
+  main .contenidoCultura .columnaDerCult {
+    padding: 10px;
+    width: 50%; }
+    main .contenidoCultura .columnaDerCult ul li {
+      font-size: 1.1rem; }
 
 .footer {
   display: flex;
