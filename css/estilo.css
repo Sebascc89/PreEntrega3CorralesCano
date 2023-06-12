@@ -270,6 +270,53 @@ main .contenidoCultura {
     main .contenidoCultura .columnaDerCult ul li {
       font-size: 1.1rem; }
 
+.mainTrabaja img {
+  width: 100%; }
+
+.mainTrabaja h1 {
+  text-align: center;
+  padding: 30px 30px;
+  font-weight: bold; }
+
+.mainTrabaja h2 {
+  font-style: italic;
+  text-align: center;
+  padding: 10px; }
+
+.mainTrabaja .contenedorVacantes {
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  grid-template-areas: "vacante1 vacante2 vacante3"; }
+  @media screen and (max-width: 768px) {
+    .mainTrabaja .contenedorVacantes {
+      margin: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      row-gap: 10px;
+      grid-template-areas: "vacante1" "vacante2" "vacante3"; } }
+  .mainTrabaja .contenedorVacantes .vacante1 {
+    padding: 10px;
+    border: 0.1px gray solid; }
+  .mainTrabaja .contenedorVacantes .vacante2 {
+    padding: 10px;
+    border: 0.1px gray solid; }
+  .mainTrabaja .contenedorVacantes .vacante3 {
+    padding: 10px;
+    border: 0.1px gray solid; }
+
+.mainTrabaja .contenedorForm {
+  margin: 10px; }
+  .mainTrabaja .contenedorForm fieldset legend {
+    margin-top: 20px; }
+  .mainTrabaja .contenedorForm fieldset .formularioPers {
+    padding: 5%; }
+
 .footer {
   display: flex;
   flex-direction: column;

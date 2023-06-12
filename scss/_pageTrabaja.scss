@@ -1,0 +1,62 @@
+.mainTrabaja {
+    img {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        padding: 30px 30px;
+        font-weight: bold;
+    }
+    h2 {
+        font-style: italic;
+        text-align: center;
+        padding: 10px; 
+    }
+    .contenedorVacantes {
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        grid-template-areas:
+            "vacante1 vacante2 vacante3";
+
+        @include responsive {
+            margin: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 10px;
+            grid-template-areas:
+                "vacante1"
+                "vacante2"
+                "vacante3";
+        }
+
+            .vacante1 {
+                padding: 10px;
+                border: 0.1px gray solid;
+            }
+            .vacante2 {
+                padding: 10px;
+                border: 0.1px gray solid;
+            }
+            .vacante3 {
+                padding: 10px;
+                border: 0.1px gray solid;
+            }
+    }
+    .contenedorForm {
+        margin: 10px;
+        fieldset {
+            legend {
+                margin-top: 20px;
+            }
+            .formularioPers {
+                padding: 5%;
+            }
+        }
+    }
+}
