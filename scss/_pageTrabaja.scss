@@ -38,14 +38,26 @@
             .vacante1 {
                 padding: 10px;
                 border: 0.1px gray solid;
+                transition: all 0.5s;
+                &:hover {
+                    border: 2px green solid;
+                }
             }
             .vacante2 {
                 padding: 10px;
                 border: 0.1px gray solid;
+                transition: all 0.5s;
+                &:hover {
+                    border: 2px green solid;
+                }
             }
             .vacante3 {
                 padding: 10px;
                 border: 0.1px gray solid;
+                transition: all 0.5s;
+                &:hover {
+                    border: 2px green solid;
+                }
             }
     }
     .contenedorForm {
