@@ -14,8 +14,9 @@ body {
 .header .navbarPers {
   width: 100%;
   position: fixed;
-  background-color: black;
-  opacity: 30%; }
+  background-color: rgba(255, 255, 255, 0.13);
+  opacity: 0.5;
+  filter: opacity=50; }
 
 .header .container-fluid #navbarSupportedContent ul li .textoNavbar {
   color: black !important;
@@ -138,6 +139,92 @@ main .contenedorNosotros {
     padding: 10px;
     display: grid;
     place-content: center; }
+
+main .imagenActivismo {
+  width: 100%; }
+  main .imagenActivismo img {
+    width: 100%; }
+
+main p {
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: rgba(212, 23, 23, 0.993);
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: justify; }
+
+main h1 {
+  text-align: center;
+  color: black;
+  padding: 30px 30px;
+  font-weight: bold; }
+
+main .medioAmbiente {
+  text-align: center; }
+  main .medioAmbiente h3 {
+    font-style: italic;
+    color: black;
+    text-align: left;
+    padding: 10px; }
+  main .medioAmbiente .videoMedioAmbiente {
+    width: 100%; }
+    main .medioAmbiente .videoMedioAmbiente video {
+      padding: 10px;
+      width: 60%; }
+      @media screen and (max-width: 768px) {
+        main .medioAmbiente .videoMedioAmbiente video {
+          width: 90%; } }
+  main .medioAmbiente p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+    font-weight: 100; }
+
+main .justiciaSocial {
+  text-align: center; }
+  main .justiciaSocial h3 {
+    font-style: italic;
+    color: black;
+    text-align: left;
+    padding: 10px; }
+  main .justiciaSocial .videoJusticiaSocial {
+    width: 100%; }
+    main .justiciaSocial .videoJusticiaSocial video {
+      padding: 10px;
+      width: 60%; }
+      @media screen and (max-width: 768px) {
+        main .justiciaSocial .videoJusticiaSocial video {
+          width: 90%; } }
+  main .justiciaSocial p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+    font-weight: 100; }
+
+main .salud {
+  text-align: center; }
+  main .salud h3 {
+    font-style: italic;
+    color: black;
+    text-align: left;
+    padding: 10px; }
+  main .salud .videoSalud {
+    width: 100%; }
+    main .salud .videoSalud video {
+      padding: 10px;
+      width: 60%; }
+      @media screen and (max-width: 768px) {
+        main .salud .videoSalud video {
+          width: 90%; } }
+  main .salud p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+    font-weight: 100; }
 
 .footer {
   display: flex;

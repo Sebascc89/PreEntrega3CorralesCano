@@ -2,8 +2,9 @@
     .navbarPers {
         width: 100%;
         position: fixed;
-        background-color: black;
-        opacity: 30%;
+        background-color: rgba(255, 255, 255, 0.13);
+        opacity: 0.5; 
+        filter:(opacity=50);
     }
     .container-fluid {
         #navbarSupportedContent {

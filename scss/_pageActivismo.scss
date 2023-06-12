@@ -1,0 +1,104 @@
+main {
+    .imagenActivismo {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+        padding: 10px;
+        margin-top: 40px;
+        font-size: 1.5rem;
+        color: rgba(212, 23, 23, 0.993);
+        line-height: 1.5;
+        font-weight: bold;
+        text-align: justify; 
+    }
+    h1 {
+        text-align: center;
+        color: black;
+        padding: 30px 30px;
+        font-weight: bold;
+    }
+    .medioAmbiente {
+      text-align: center;
+      h3 {
+        font-style: italic;
+        color: black;
+        text-align: left;
+        padding: 10px;
+      }
+      .videoMedioAmbiente {
+        width: 100%;
+        video {
+          padding: 10px;
+          width: 60%;
+
+          @include responsive {
+            width: 90%
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: black;
+        text-align: justify;
+        font-weight: 100;
+      }
+    }
+    .justiciaSocial {
+      text-align: center;
+      h3 {
+        font-style: italic;
+        color: black;
+        text-align: left;
+        padding: 10px;
+      }
+      .videoJusticiaSocial {
+        width: 100%;
+        video {
+          padding: 10px;
+          width: 60%;
+
+          @include responsive {
+            width: 90%
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: black;
+        text-align: justify;
+        font-weight: 100;
+      }
+    }
+    .salud {
+      text-align: center;
+      h3 {
+        font-style: italic;
+        color: black;
+        text-align: left;
+        padding: 10px;
+      }
+      .videoSalud {
+        width: 100%;
+        video {
+          padding: 10px;
+          width: 60%;
+
+          @include responsive {
+            width: 90%
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: black;
+        text-align: justify;
+        font-weight: 100;
+      }
+    }
+}
